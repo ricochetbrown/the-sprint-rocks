@@ -3,15 +3,52 @@
   <span fxflex="15">NEXT ROUND</span>
 </mat-toolbar>
 
-<div fxLayout="row" fxLayoutAlign="space-between">
+<div fxLayout="row" class="card-area">
   <div fxFlex="33">
-    Hey
+    <h3><i class="fa fa-card"></i> Cards</h3>
+    <div>
+      <i class="fa fa-eye"></i>
+      John Davis
+    </div>
+    <div>
+      <i class="fa fa-eye-slash"></i>
+      Derrick Brown
+    </div>
   </div>
   <div fxFlex="33">
-    Yo
+    <h3><i class="fa fa-user"></i> Players</h3>
+
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>John Davis</mat-card-title>
+        <mat-card-subtitle>Team Owner</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-actions>
+        <button mat-button>Accept <i class="fa fa-thumbs-down"></i></button>
+        <button mat-button>Add</button>
+      </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="example-card" style="margin-top:10px">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Derrick Brown</mat-card-title>
+      </mat-card-header>
+      <mat-card-actions>
+        <button mat-button>Accept <i class="fa fa-thumbs-up"></i></button>
+        <button mat-button>Add</button>
+      </mat-card-actions>
+    </mat-card>
+
   </div>
   <div fxflex="33">
-    Bye
+    <h3><i class="fa fa-users"></i> Team</h3>
+    <ul style="list-style: none">
+      <li>John</li>
+      <li>Derrick</li>
+    </ul>
+
   </div>
 </div>
 

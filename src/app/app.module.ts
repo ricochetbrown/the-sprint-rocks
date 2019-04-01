@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {FlexLayoutModule} from "@angular/flex-layout";
-import {MatToolbarModule} from '@angular/material';
+import {MatButtonModule, MatCardModule, MatToolbarModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,9 @@ import {MatToolbarModule} from '@angular/material';
   imports: [
     BrowserModule,
     FlexLayoutModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
